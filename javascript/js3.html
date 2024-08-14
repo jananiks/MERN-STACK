@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+        <input type="text" id="myTextbox" class="border-normal" placeholder="Enter text here">
+        <button onclick="toggleBorder()">Check Textbox</button>
+    
+        <script>
+            function toggleBorder() {
+                const textbox = document.getElementById('myTextbox');
+                if (textbox.value.trim() === '') {
+                    textbox.classList.add('border-red');
+                    textbox.classList.remove('border-normal');
+                } else {
+                    textbox.classList.remove('border-red');
+                    textbox.classList.add('border-normal');
+                }
+            }
+        </script>
+    </body>
+
+</html>
