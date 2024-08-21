@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body{
+            height: 650px;
+            background-image: url(ggg.jpg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        *{
+            margin:0%;
+            padding: 0%;
+        }
+        
+        .links{
+            background-color: rgb(14, 14, 44);
+            width: 100%;
+            height: 30px;
+            padding: 20px;
+            
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: center;
+            
+        }
+        
+        .links a:hover{
+            color:rgb(255, 255, 255);
+        }
+        a{
+            padding: 20px;
+            text-decoration: none;
+            color:rgb(114, 194, 255);
+            font-size: 30px;
+
+        }
+        .products{
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            justify-content: space-between;
+            padding: 50px;
+            
+        }
+        img{
+            height: 25vh;
+            width: 40vh;
+        }
+        img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(118, 111, 93);
+            box-shadow: 5px 10px gray;
+
+        }
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            color: rgb(12, 5, 90);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="links">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+       
+    </div>
+    <h1>Gallery</h1>
+    
+    <div class="products">
+        <div class="food"><img src="headset.jpg" alt="HEADSET"></div>
+        <div class="food"><img src="ipad.jpg" alt="IPAD"></div>
+        <div class="food"><img src="laptop.jpg" alt="MACBOOK"></div>
+        <div class="food"><img src="phone.jpg" alt="IPHONE"></div>
+    </div>
+</body>
+</html>
